@@ -1,0 +1,102 @@
+* Introduction
+** Concept 
+Object
+Class
+Inheritance
+
+Origine Simula-1
+
+** SmalTalk + Simula = Core concept of object paradigm
+Classe
+Encapsulation
+Inheritance
+Message
+Ces concepts drive l'informatique depuis 25 ans
+
+* Introduction to POO
+** Encapsulation
+| Data             | Procedures | 
+|------------------|------------|
+| Member variables | Methods    |
+
+Bénéfices : - Retire l'accès direct au données, cache l'implémentation
+            - Réduit la complexité en cachant les détails sous la surface
+
+Rassemble les données avec les méthodes qui agissent sur ces données
+
+** Object
+Contient : - des données privées
+           - des méthodes privées
+           - des méthodes publiques qui interragissent avec des interfaces
+
+** Class
+Abstraction d'un object (par exemple plan d'un airbus A380)
+
+** Inheritance 
+Un chat et un chien sont des mammifères.
+
+Tout les mammifères ont des caractéristiques communes et le chien et le chat
+découlent du mmamifère.
+
+Personne : Classe de base (nom, adresse)
+Employé : Classe qui dérive de Personne (+companie, +salaire)
+Etudiant : Classe qui dérive de Personne (+école)
+
+L'héritage casse l'encapsulation car les sous-classes sont exposées à 
+l'implémentation de leur parent (concept le moins important de la POO)
+
+** Why does OOP dominate the industry ?
+Java (was) simple
+Java s'est imposé comme le langage clé de l'industrie
+
+** Java in one slide
+OOP Paradigm
+Class-based, object-oriented and makes maximum of it (until Java 8 : functional
+programming)
+
+"Write once, run everywhere". Ne dépend pas de l'architecture de l'ordinateur.
+Le code est compilé pour une machine virtuelle (Java machine)
+Il existe un programme permettant de traduire les instructions de la machine
+virtuelle en instruction de la machine physique.
+
+** "Pure" vs not "Pure" OOP Language
+Pure OOP Languages : Simula, Smalltalk, Eiffel
+  Everything is an object 
+  Data encapsulation is everywhere
+  All procedures are methods
+
+Not "Pure" OOP Languages : C++, Pascal
+  Object are living together with some common variables
+  It exists method  and procedure
+
+
+Java is almost pure because :
+  Par nature un programme est composé d'au moins une classe.
+  Aucun programme ne peut être créé sans classes.
+Du moins :
+  Java possède des types primitifs.
+  Il existe des classes static, c'est une méthode qui ne sera pas liée à un 
+objet spécifique.
+
+** Conversion
+Implicit conversion :
+  int a = 1;
+  float b = 2.0f;
+  float c = a / b;
+  Renvoie un flottant. Vu que les flottants sont un ensemble plus grand
+que les entiers. "a" a été converti en flottant 
+
+Explicit conversion
+  Using cast keyword
+  int a = 1;
+  int b = 2;
+  double c = (double) a/b;
+
+* Memory 
+Reference : A reference is a variable that refers to something else and can be used as an alias 
+
+Pointer : A pointer is a variable that stores a memory address, for the purpose of acting as an alias to what is stored at that address
+
+Un pointeur est une référence mais toutes les références ne sont pas des pointeurs.
+  
+* TODO TP Java Codingame Chuck Norris
